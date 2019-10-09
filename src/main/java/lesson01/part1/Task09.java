@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Task09 {
 
     /**
@@ -22,11 +24,21 @@ public class Task09 {
      */
 
     public static void main(String[] args) {
+
         System.out.println(sumDigitsInNumber(546));
     }
 
     public static int sumDigitsInNumber(int number) {
+        int sum=0;
+        for(int i=100;i>0;i/=10) {
+
+            sum += number / i;
+            number %=i;
+
+        }
+
         //напишите тут ваш код
-        return 0;
+        return sum;
+
     }
 }

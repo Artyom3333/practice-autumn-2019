@@ -22,12 +22,14 @@ public class Task07 {
      */
 
     public static void main(String[] args) {
+
         System.out.println(convertCelsiusToFahrenheit(41));
     }
 
-    public static double convertCelsiusToFahrenheit(int celsius) {
-        //напишите тут ваш код
+    public static double convertCelsiusToFahrenheit(double celsius) {
+        double TF;
+        TF=(celsius*9/5)+32;
 
-        return 0;
+        return TF;
     }
 }

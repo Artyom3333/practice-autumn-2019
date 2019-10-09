@@ -1,6 +1,6 @@
 package lesson01.part1;
 
-public class Task13 {
+public class  Task13 {
 
     /**
      * что сила тяжести на Луне составляет примерно 17% от силы тяжести на Земле.
@@ -29,7 +29,9 @@ public class Task13 {
     }
 
     public static double getWeight(int earthWeight) {
+        double a;
+        a=earthWeight*0.17;
         //напишите тут ваш код
-        return 0D;
+        return a;
     }
 }
